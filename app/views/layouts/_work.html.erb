@@ -1,0 +1,17 @@
+<div class="row work">
+  <hr>
+  <div class="large-12 columns">
+    <h4>Work</h4>
+    <p>Click on each image to view my work!</p>
+
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+      <% @items.each do |item| %>
+        <li>
+          <%= link_to item do %>
+            <img src= '<%= item.img_url %>'>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
